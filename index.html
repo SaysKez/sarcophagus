@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<title>Your Sarcophagus</title>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	
+	<meta name="author" content="Kezie Todd" />
+	<meta name="description" content="What's That Scratching at Your Sarcophagus? A micro game of interactive fiction by Kezie Todd." />
+    <meta name="keywords" content="'Kezie Todd', Sarcophagus, IF, 'interactive fiction', 'egyptian interactive fiction', 'egyptian game', 'text adventure'" />
+
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i|VT323" rel="stylesheet">
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+</head>
+
+<body>
+<div class="container">
+	<div class="introduction">
+		<svg class="horus-eye" viewBox="0 0 300 200" version="1" xmlns="http://www.w3.org/2000/svg">
+		<g fill="none" fill-rule="evenodd">
+			<path fill="#0F0F0F" d="M0 0h300v200H0z"/>
+			<g fill="#FFEA3E">
+			<path d="M26 41h16v4H26zM30 37h8v4h-8zM26 76h12v4H26zM34 72h4v4h-4zM38 74h12v6H38zM74 74H50v4h24zM74 74h8v6h-8zM82 72h12v8H82zM106 70H94v12h12zM110 68h-4v16h4zM114 68h-4v18h4zM118 66h-4v20h4zM122 82h-4v8h4zM126 64h-4v8h4zM122 64h-4v12h4zM130 62h-4v8h4zM138 60h-8v6h8zM146 56h-8v6h8zM150 54h-4v6h4zM158 52h-8v6h8zM166 50h-8v6h8zM178 48h-12v6h12zM190 46h-12v6h12zM198 48h-8v6h8zM202 50h-4v4h4zM206 50h-4v6h4zM210 52h-4v4h4zM214 52h-4v6h4zM222 54h-8v6h8zM226 58h-4v6h4zM238 62h-8v6h8zM242 66h-4v6h4zM246 68h-4v6h4zM254 72h-8v6h8z"/>
+			<path d="M258 76h-8v6h8z"/>
+			<path d="M258 76h-4v12h4zM262 80h-4v12h4zM266 86h-4v14h4zM270 90h-4v10h4zM274 94h-4v4h4zM262 94h-4v8h4zM258 96h-4v6h4zM254 98h-8v6h8zM246 100h-8v6h8zM238 102h-12v6h12z"/>
+			<path d="M230 102h-4v8h4zM226 104h-4v6h4zM222 106h-8v4h8z"/>
+			<path d="M218 108h-36v4h36zM202 112h-20v4h20zM202 116h-24v4h24zM198 120h-28v4h28zM194 124h-28v6h28zM190 130h-32v4h32zM183 134h-25v4h25zM179 138h-28v4h28zM171 142h-24v4h24zM167 146h-28v4h28zM155 150h-20v6h20z"/>
+			<path d="M147 152h-16v8h16z"/>
+			<path d="M147 156h-24v4h24z"/>
+			<path d="M135 158h-24v4h24zM127 162h-24v4h24z"/>
+			<path d="M115 164H85v4h30z"/>
+			<path d="M101 166H85v4h16zM85 162h-8v6h8zM77 158h-8v6h8zM69 154h-8v6h8zM65 148h-4v6h4zM61 138h-4v14h4zM61 116h-4v8h4zM73 112h-8v6h8z"/>
+			<path d="M69 114h-8v6h8zM81 116h-8v4h8z"/>
+			<path d="M85 118h-8v4h8zM89 122h-8v6h8zM89 128h-4v10h4zM85 138h-4v4h4zM81 140h-4v4h4zM77 136h-4v6h4zM57 124h-4v21h4zM210 160h-8v-48h8z"/>
+			<path d="M214 160h-6v-40h6zM218 156h-4v-27h4zM204 172h-4v-34h4zM200 176h-4v-6h4zM196 180h-4v-4h4zM208 168h-4v-8h4zM226 152h-8v-12h8zM222 140h-4v-4h4zM230 150h-4v-6h4zM234 148h-4v-4h4zM182 106h-8v6h8zM174 104h-4v6h4zM170 102h-4v8h4zM166 102h-8v6h8zM158 98h-4v8h4zM154 96h-8v8h8zM146 92h-4v8h4zM142 90h-4v10h4zM138 86h-8v10h8zM130 84h-8v10h8zM234 60h-8v6h8zM42 40h12v5H42zM54 40h8v6h-8zM62 38h12v8H62zM74 38h12v6H74zM86 36h4v8h-4zM90 34h8v8h-8zM98 34h4v8h-4zM102 34h8v6h-8zM110 30h8v8h-8zM118 28h16v8h-16zM134 26h4v10h-4zM138 24h12v8h-12z"/>
+			<path d="M138 24h12v8h-12zM150 20h28v10h-28zM178 16h32v12h-32z"/>
+			<path d="M202 22h16v8h-16zM218 24h4v10h-4zM222 26h8v10h-8zM230 30h8v10h-8zM238 32h4v10h-4zM242 36h8v6h-8zM250 38h4v8h-4zM254 40h4v8h-4z"/>
+			<path d="M254 42h8v6h-8zM262 44h4v6h-4zM266 47h4v5h-4zM270 52h4v4h-4z"/>
+			</g>
+				
+			<g transform="translate(139 50)">
+			<ellipse class="eyeball" cx="55" cy="31" rx="55" ry="31"/>
+			<path class="pupil" d="M64 12h7v5h5v9h3v10h-3v9h-5v5h-7v5H46v-5h-8v-5h-4v-9h-3V26h3v-9h4v-5h8V7h18v5z" fill="#FFEA3E"/>
+			</g>
+		</g>
+		</svg>
+
+		<h1>What's That Scratching at Your Sarcophagus?</h1>
+		<h4>A micro game of interactive fiction by Kezie Todd</h4>
+	</div>
+
+	<p class="about">Play as a ghostly pharaoh awakened from your royal slumber by a tomb robber. Unable to interact directly with this vile desecrator of your sanctuary, you must experiment with weird and wacky items and traps to instil fear in the heart of the intruder.</p>
+
+	<div class="buttons">
+		<a class="play button" href="play.html"><svg viewBox="0 0 52 60" version="1" xmlns="http://www.w3.org/2000/svg">
+			<g fill-rule="evenodd">
+			  <path d="M0 0h12v60H0zM12 4h8v52h-8zM20 8h8v44h-8zM28 14h8v32h-8zM36 21h8v18h-8zM44 25h8v10h-8z"/>
+			</g>
+		  </svg> Play Game</a>
+		<a class="download button" href="What's That Scratching at Your .zblorb"><svg viewBox="0 0 60 68" version="1" xmlns="http://www.w3.org/2000/svg">
+			<g fill-rule="evenodd">
+			  <path d="M24 0h12v56H24zM28 56h4v4h-4z"/>
+			  <path d="M56 28v8H4v-8zM50 36v8H10v-8zM42 44v8H18v-8zM0 64h60v4H0z"/>
+			</g>
+		  </svg>Download</a>
+	</div>
+
+	<footer class="playinfo">
+		<p>What's That Scratching at Your Sarcophagus? is an experimental interactive fiction created with <a href="http://inform7.com/">Inform</a>. Play right here in your browser or download and use an interpreter such as <a href="http://www.logicalshift.demon.co.uk/mac/zoom.html">Zoom
+	for Mac OS X</a> or <a href="http://freespace.virgin.net/davidk.kinder/frotz.html">Windows Frotz</a>.</p>
+	</footer> 
+
+</div>
+</body>
+
+</html>
+

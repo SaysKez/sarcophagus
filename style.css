@@ -1,0 +1,101 @@
+/*
+
+Standard CSS file for use with Standard.html and Standard-Source.html. 
+
+*/
+
+
+body {
+	/*font-family: 'VT323', monospace;*/
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 100%;
+	color: #FFEA3E;
+	background-color: #0F0F0F;
+	margin: auto;
+	text-align: center;
+}
+
+.horus-eye {
+	width: 40%;
+	display: block;
+	margin: 4em auto 1em auto;
+	max-width: 500px;
+}
+
+h1, h4 {
+	font-family: 'VT323', monospace;
+	font-size: 3em;
+	margin: auto;
+	max-width: 700px;
+}
+
+h4 {
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	margin: 1em auto 2em auto;
+	font-style: italic;
+}
+
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	max-width: 700px;
+	margin: 0em auto 2em auto;
+}
+
+footer {
+	font-size: 60%;
+	font-style: italic;
+	margin: 4em auto 2em;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+/* Buttons */
+
+a {
+	text-decoration: none;
+	color: #FFEA3E;
+	text-align: center;
+	font-family: 'VT323', monospace;
+	font-size: 1.4em;
+}
+
+.button {
+	border: 2px solid #FFEA3E;
+	text-align: center;
+	display: inline;
+	margin: 0.8em auto;
+	padding: 0.4em 1em;
+	width: 4em;
+	transition: all .15s ease-in;
+}
+
+.button:hover {
+	background-color: #FFEA3E;
+	color: #0F0F0F;
+}
+
+.button svg {
+	width: 0.6em;
+	fill: #FFEA3E;
+}
+
+.button:hover svg {
+	fill: #0F0F0F;
+}
+
+.download svg {
+	margin-right: 0.4em;
+}
+
+.play {
+	margin-right: 0.4em;
+}
+
+.buttons {
+	margin: 2.4em auto 4em auto;
+}
