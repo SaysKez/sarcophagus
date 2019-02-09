@@ -369,3 +369,24 @@ input {
 	color: #9F922B;
 	font-style:italic;
 }
+
+
+/* RESPONSIVE */
+
+@media (max-width: 50em) {
+	#vorpleContainer{
+		margin: 0em;
+		padding: 0.8em;
+		font-size: 110%;
+	}
+
+	#vorple{
+		width:100%;
+	}
+
+	html{
+		overflow-y: hidden;
+		margin-right: 0em;
+		padding-right: 0px;
+	}
+}
